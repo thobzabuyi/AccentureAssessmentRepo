@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Brands</title>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @*@Scripts.Render("~/bundles/slider")*@
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="~/Scripts/slider.js" defer></script>
+</head>
+<body>
+    <!-- Top navigation -->
+    <nav class="bg-primary navbar-default" role="navigation">
+        <div class="navbar">          
+            <!-- Logo  -->
+            <div class="logo">
+                <a href="#home" class="active"><img src="~/Content/img/logo.svg"></a>
+            </div>
+
+            <!-- Centered links -->
+            <div class="links">
+                <a href="#contact">Services</a>
+                <a href="#contact">Industries</a>
+                <a href="#contact">Cases</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Right aligned links -->
+            <a href="#" class="btn">Let’s Talk</a>
+        </div>
+    </nav>
+  
+        @RenderBody()     
+    
+    <div class="footer bg-primary-dark ">
+        <div class="wrapper container">
+            <span class="rectangle">Contact us</span>
+            <div class="top-footer">
+                <h2>Have a project in mind? <br />Let's make it happen</h2>
+                <div class="address">
+                    <span>22 Street Name, Suburb, 8000,</span>
+                    <span>Cape Town, South Africa</span>
+                    <span>+27 21 431 0001</span>
+                    <a href="mailto:enquirie@website.co.za">enquirie@website.co.za</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-holder">
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Impressum</a>
+                </div>
+
+                <div class="link-holder">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+                <div class="link-holder">
+                    <a href="#">Github</a>
+                    <a href="#">Linkedin</a>
+                    <a href="#">Teams</a>
+                </div>
+
+                <div class="link-holder">
+                    <a href="#">Youtube</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Dribbble</a>
+                </div>
+
+                <div class="link-holder">
+                    <a href="#">Explore open jobs</a>
+                    <a href="#">©2000—2023 Company Name</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
