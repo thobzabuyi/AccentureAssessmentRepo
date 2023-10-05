@@ -3,6 +3,7 @@
 Database: 
 used ms sql server 
 run the SQLQuery file to create database, tables and insert data.
+NB: I did not add the actual SVGs on the database as it is not a safe practice. I only added sgv names then pulled the names from the db and matched them with the correct sgv.
 
 Project:
 used vs studio 2022
